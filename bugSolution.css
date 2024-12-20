@@ -1,0 +1,33 @@
+/* bugSolution.css */
+
+/* Correct use of calc() */
+.correct-calc {
+  width: calc(100% - 10px);
+  /* Proper spacing and unit consistency */
+}
+
+.correct-nested-calc {
+  width: calc(50% - calc(20px + 10px));
+  /* Correct use of parentheses and spacing */
+}
+
+.correct-unit-conversion {
+  width: calc(50vw - 20px);
+  /* Using appropriate units for viewport-based widths */
+}
+
+/* Incorrect use of calc() - shown for comparison */
+.incorrect-calc {
+  /* Missing space */
+  width: calc(100%-10px);
+}
+
+.incorrect-nested-calc {
+  /* Parentheses mismatch */
+  width: calc(50% - 20px + 10px);
+}
+
+.incorrect-unit-conversion {
+  /* Unit mismatch, mixing percentages and pixels without conversion */
+  width: calc(50% - 20px);
+}
